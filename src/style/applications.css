@@ -1,0 +1,11 @@
+#applications {}
+
+#applications-container {
+    padding: 20px;
+}
+
+.application {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
