@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Damion');
 #navbar {
-    padding: 10px 20px;
+    padding: 10px 0;
     background-color: #27ae60;
     display: flex;
     color: #FFF8F0;
@@ -8,8 +8,8 @@
 }
 
 #menu-button {
-    float: right;
-    margin-left: auto;
+    /* float: right; */
+    margin: 0 20px;
     display: flex;
     font-size: 200%;
     cursor: pointer;
