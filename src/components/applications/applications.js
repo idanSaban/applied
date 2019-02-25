@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 import Application from './application';
+import NoResults from './noResults';
 class Applications extends Component {
 
     render() {
-
-        const { applications } = { ...this.props.data }
+        const { applications } = this.props.data
 
         return (
             <div id="applications">
-                <div id="applications-container">
-
-                    {applications.map(a => <Application data={a} />)}
-                </div>
+                {applications.length > 0
+                    ?
+                    <div id="applications-container">
+                        {applications.map((a, i) => <Application key={i} data={a} />)}
+                    </div>
+                    :
+                    <NoResults />
+                }
             </div>
         )
     }
