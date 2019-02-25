@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { MdSearch } from "react-icons/md";
 
 class Search extends Component {
 
@@ -6,8 +7,8 @@ class Search extends Component {
 
         return (
             <div id="search">
-
-                <input type="text"></input>
+                <MdSearch />
+                {/* <input type="text"></input> */}
             </div>
         )
     }

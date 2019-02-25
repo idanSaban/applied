@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './components/navBar/navBar';
+import AppBar from './components/appBar/appBar';
 import Applications from './components/applications/applications';
 
 class App extends Component {
@@ -9,13 +9,13 @@ class App extends Component {
     super()
     this.state = {
       applications: [
-        { company: "google", position: "boss", link: "www.google.com", complete: false }]
+        { company: "some company", position: "web developer", link: "www.linkdin.com/jobs/123456", complete: false }]
     }
   }
   render() {
     return (
       <div className="App">
-        <NavBar />
+        <AppBar />
         <Applications data={this.state} />
       </div>
     );
