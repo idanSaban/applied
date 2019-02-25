@@ -12,7 +12,7 @@ class App extends Component {
       applications: [
         // { company: "some company", position: "web developer", link: "www.linkdin.com/jobs/123456", complete: false }
       ],
-      displayMenu: false
+      displayMenu: true
     }
   }
 

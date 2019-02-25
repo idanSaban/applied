@@ -3,10 +3,10 @@
     grid-template-columns: 1fr 9fr;
     background-color: white;
     padding: 10px;
-    font-size: 150%;
-    margin: auto 5px;
-    font-size: 25px;
-    border-radius: 20px;
+    font-size: 120%;
+    margin: auto 10px;
+    /* font-size: 25px; */
+    border-radius: 5px;
     margin-bottom: 50px;
 }
 
@@ -16,6 +16,10 @@
     color: inherit;
     font-size: inherit;
     width: 100%;
+}
+
+#search:focus-within {
+    box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.35);
 }
 
 #search>svg {
