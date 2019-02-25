@@ -1,0 +1,23 @@
+#search {
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    background-color: white;
+    padding: 10px;
+    font-size: 150%;
+    margin: auto 5px;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+#search>input {
+    border: 0;
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    width: 100%;
+}
+
+#search>svg {
+    align-self: center;
+}
