@@ -11,6 +11,7 @@ class Applications extends Component {
                 {applications.length > 0
                     ?
                     <div id="applications-container">
+                        <Header />
                         {applications.map((a, i) => <Application key={i} data={a} />)}
                     </div>
                     :
@@ -22,3 +23,15 @@ class Applications extends Component {
 }
 
 export default Applications;
+
+const Header = function () {
+
+    return (
+        <div id='applications-header'>
+            <div></div>
+            {
+                ['Company', 'Position', 'Status'].map(item => <div>{item}</div>)
+            }
+        </div>
+    )
+}
