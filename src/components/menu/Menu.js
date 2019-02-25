@@ -3,14 +3,18 @@ import { MdCancel } from "react-icons/md";
 
 import '../../style/menu.css'
 import Search from '../search/search';
+import Logo from '../logo';
 class Menu extends Component {
 
     render() {
         return (
             <div id="menu" className={this.props.className}>
-                <CloseButton toggleMenu={this.props.toggleMenu} />
+                <div id='menu-top-container'>
+                    <Logo />
+                    <CloseButton toggleMenu={this.props.toggleMenu} />
+                </div>
                 <Search />
-                <MenuItem text='View Applications' />
+                <MenuItem isCurrentPage={true} text='View Applications' />
                 <MenuItem text='New Application' />
                 <MenuItem text='Settings' />
             </div>
@@ -30,12 +34,12 @@ const CloseButton = function ({ toggleMenu }) {
     )
 }
 
-const MenuItem = function ({ text, action }) {
+const MenuItem = function ({ text, action, isCurrentPage }) {
+
     return (
-        <div className='menu-item' onClick={action}>
-            <span>
-                {text}
-            </span>
+        <div className={isCurrentPage ? `menu-item current-page` : `menu-item`}
+            onClick={action}>
+            {text}
         </div>
     )
 }

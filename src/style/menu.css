@@ -24,12 +24,22 @@ input {
     justify-content: right;
     font-size: 200%;
     height: 45px;
-    padding: 5px;
+    padding-right: 10px;
 }
 
 #close-button>span {
-    padding: 1px;
     cursor: pointer;
+}
+
+#menu-top-container {
+    display: grid;
+    padding-top: 10px;
+    padding-left: 82px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#menu-top-container>.logo {
+    justify-self: left;
 }
 
 .showMenu {
@@ -44,13 +54,14 @@ input {
 }
 
 .menu-item {
+    text-align: left;
     cursor: pointer;
-    font-size: 25px;
-    padding: 50px 0;
-    /* border-bottom: solid 1px; */
+    font-size: 15px;
+    padding: 15px 0;
+    padding-left: 20%;
 }
 
-.menu-item:hover {
+.menu-item:hover, .current-page {
     background-color: rgba(255, 255, 255, 0.384);
 }
 

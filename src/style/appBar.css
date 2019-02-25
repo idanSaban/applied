@@ -8,7 +8,6 @@
 }
 
 #menu-button {
-    /* float: right; */
     margin: 0 20px;
     display: flex;
     font-size: 200%;
@@ -16,7 +15,8 @@
     padding: 5px;
 }
 
-#logo {
+.logo {
+    color: #FFF8F0;
     font-family: 'Damion', cursive;
     font-size: 200%;
     text-shadow: 3px 2px 0px rgb(36, 109, 109);
