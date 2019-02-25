@@ -9,3 +9,12 @@
     display: grid;
     grid-template-columns: 2fr 2fr 2fr 1fr;
 }
+
+#noResults {
+    margin-top: 15vh;
+    font-size: 150%;
+}
+
+#noResults>svg {
+    font-size: 300%;
+}

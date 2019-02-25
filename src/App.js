@@ -10,9 +10,9 @@ class App extends Component {
     super()
     this.state = {
       applications: [
-        { company: "some company", position: "web developer", link: "www.linkdin.com/jobs/123456", complete: false }
+        // { company: "some company", position: "web developer", link: "www.linkdin.com/jobs/123456", complete: false }
       ],
-      displayMenu: true
+      displayMenu: false
     }
   }
 
