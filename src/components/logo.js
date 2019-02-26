@@ -3,7 +3,7 @@ import '../style/appBar.css'
 
 const Logo = function () {
     return (
-        <span class="logo">
+        <span className="logo">
             Applied
         </span>
     )

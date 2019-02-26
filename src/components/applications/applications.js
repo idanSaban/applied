@@ -30,7 +30,7 @@ const Header = function () {
         <div id='applications-header'>
             <div></div>
             {
-                ['Company', 'Position', 'Status'].map(item => <div>{item}</div>)
+                ['Company', 'Position', 'Status'].map((item, i) => <div key={i}>{item}</div>)
             }
         </div>
     )

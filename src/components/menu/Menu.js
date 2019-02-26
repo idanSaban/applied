@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MdCancel } from "react-icons/md";
+import { MdCancel, MdHome, MdSettings, MdLibraryAdd, } from "react-icons/md";
 
 import '../../style/menu.css'
 import Search from '../search/search';
@@ -14,9 +14,9 @@ class Menu extends Component {
                     <CloseButton toggleMenu={this.props.toggleMenu} />
                 </div>
                 <Search />
-                <MenuItem isCurrentPage={true} text='View Applications' />
-                <MenuItem text='New Application' />
-                <MenuItem text='Settings' />
+                <MenuItem icon={<MdHome />} isCurrentPage={true} text='View Applications' />
+                <MenuItem icon={<MdLibraryAdd />} text='New Application' />
+                <MenuItem icon={<MdSettings />} text='Settings' />
             </div>
         )
     }
@@ -34,12 +34,12 @@ const CloseButton = function ({ toggleMenu }) {
     )
 }
 
-const MenuItem = function ({ text, action, isCurrentPage }) {
+const MenuItem = function ({ icon, text, action, isCurrentPage }) {
 
     return (
         <div className={isCurrentPage ? `menu-item current-page` : `menu-item`}
             onClick={action}>
-            {text}
+            {icon}            {text}
         </div>
     )
 }
